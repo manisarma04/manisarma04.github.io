@@ -1,0 +1,135 @@
+/* Animation Delays */
+.animate__delay-02s {
+    animation-delay: 0.2s !important;
+}
+
+.animate__delay-04s {
+    animation-delay: 0.4s !important;
+}
+
+.animate__delay-06s {
+    animation-delay: 0.6s !important;
+}
+
+.animate__delay-08s {
+    animation-delay: 0.8s !important;
+}
+
+.animate__delay-1s {
+    animation-delay: 1s !important;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Scroll Animation Classes */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
+.scrolled.fade-in {
+    transform: translateX(0);
+}
+
+.scrolled.fade-in-left {
+    transform: translateX(0);
+}
+
+.scrolled.fade-in-right {
+    transform: translateX(0);
+}
+
+.scrolled.fade-in-up {
+    transform: translateY(0);
+}
+
+.scrolled.fade-in-down {
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    transform: translateX(-50px);
+}
+
+.fade-in-right {
+    transform: translateX(50px);
+}
+
+.fade-in-up {
+    transform: translateY(50px);
+}
+
+.fade-in-down {
+    transform: translateY(-50px);
+}
